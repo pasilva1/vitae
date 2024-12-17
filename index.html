@@ -29,7 +29,7 @@
             background-color: #0077b5;
             color: white;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 10px 10px 10px 10px;
             max-width: 800px;
             margin: -75px auto 0;
             position: relative;
@@ -42,16 +42,26 @@
             border-radius: 50%;
             border: 5px solid white;
             margin-bottom: 10px;
-            transition: transform 0.3s ease-in-out; /* Suavização */
+            transition: transform 0.3s ease-in-out;
         }
 
-        /* Aumenta a imagem ao passar o mouse */
         .header img:hover {
             transform: scale(1.2);
         }
 
         .header .info {
             text-align: center;
+            margin-top: 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        .header p {
+            margin: 5px 0;
+            font-size: 1.2em;
         }
 
         .section {
@@ -69,6 +79,15 @@
             padding-bottom: 5px;
         }
 
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
         .skills {
             display: flex;
             flex-wrap: wrap;
@@ -80,10 +99,9 @@
             color: white;
             padding: 5px 10px;
             border-radius: 5px;
-            transition: transform 0.3s ease-in-out; /* Suavização */
+            transition: transform 0.3s ease-in-out;
         }
 
-        /* Aumenta as habilidades ao passar o mouse */
         .skills span:hover {
             transform: scale(1.2);
         }
@@ -95,6 +113,8 @@
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 1em;
+            margin-top: 10px;
         }
 
         .linkedin-button:hover {
@@ -104,44 +124,88 @@
 </head>
 
 <body>
-    <!-- Banner -->
     <div class="background-banner"></div>
-
-    <!-- Cabeçalho -->
     <div class="header">
         <img src="https://media.licdn.com/dms/image/v2/D4E03AQH4dHiMDhDh9Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1732676296427?e=1739404800&v=beta&t=PqTAjZw4vHLMJh-1EsPKMBzXvKquoSLVxjI2eBGkgqo"
             alt="Foto de Perfil">
         <div class="info">
-            <h1>Patrick Ataide</h1>
-            <p>Full Cicle - Infraestrutura / Desenvolvimento</p>
-            <p>Sankhya | API | Automação | RPA | Python | SQL | IA RAG</p>
-            <p>Microsoft | Linux | Docker | Reports | Dev. E-mail Marketing</p>
+            <h1>Patrick Ataide</h1><br>
+            <p>Full Cicle - Infraestrutura / Desenvolvimento </p><br>
+            <p>Sankhya | API | Automação | RPA | Python | SQL | IA RAG |</p>
+            <p>Microsoft | Linux | Docker | Reports | Dev. E-mail Marketing |</p><br>
             <p>Olinda, Pernambuco, Brasil · patrickataide.ti@gmail.com · (81) 98931-4727</p>
             <a href="https://www.linkedin.com/in/patrick-ata%C3%ADde-410b44218/" class="linkedin-button">Visitar Meu LinkedIn</a>
             <a href="https://wa.me/55989304727" class="linkedin-button">Meu número WhatsApp</a>
         </div>
     </div>
 
-    <!-- Habilidades -->
+    <div class="section">
+        <h2>Sobre</h2>
+        <p>
+            Profissional com multipotencial que atua no âmbito da tecnologia da informação.
+            16 anos de experiência em infraestrutura e 4 anos atuando com automação, atuando
+            em automações, IA e Robot Process Automation. Especialista Fullcicle: Infraestrutura / Desenvolvimento, com expertise em Dashboards, relatórios, e metodologias ágeis como Kanban.
+            Foco no trabalho em equipe e em resultados.
+
+            <br><br>Skill:<br>
+        
+            - Administração de servidores Linux:<br>
+            - Administração de servidores Microsoft:<br>
+            - Arquitetura distribuída containers<br>
+            - Automação de suporte técnico<br>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Experiência</h2>
+        <ul>
+            <li>
+                <strong>Analista de Sistemas de Automação Pleno</strong><br>
+                Central IT - Tecnologia em Negócios | Mar 2024 - Presente<br><br>
+                <ul>
+                    <li>Desenvolvimento de integrações e automações de notas fiscais no ERP Sankhya.</li>
+                    <li>Uso de ferramentas como Streamlit, Dash, Flask, Selenium, PowerShell, Docker, Oracle SQL, Micrososft SQL, Python e RPA.</li>
+                    <li>Modelagem de dados, análise de requisitos e criação de fluxos.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Analista de Infraestrutura</strong><br>
+                Central IT - Tecnologia em Negócios | Mar 2021 - Fev 2024<br><br>
+                <ul>
+                    <li>Gestão de backups corporativos com ferramentas como IBM TSM, Veeam e Bacula Linux.</li>
+                    <li>Automação de relatórios e Dashboards.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
     <div class="section">
         <h2>Habilidades</h2>
         <div class="skills">
-            <span>Python</span>
-            <span>Flask</span>
-            <span>Streamlit</span>
-            <span>RPA</span>
-            <span>Pandas</span>
-            <span>IA RAG</span>
-            <span>API</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Docker</span>
-            <span>SQL</span>
-            <span>Oracle</span>
-            <span>Selenium</span>
-            <span>Back-End</span>
-            <span>Linux</span>
-            <span>Microsoft</span>
+            <span>Python</span><br>
+            <span>Flask</span><br>
+            <span>Streamlit</span><br>
+            <span>RPA</span><br>
+            <span>Pandas</span><br>
+            <span>IA RAG</span><br>
+            <span>API</span><br>
+            <span>HTML</span><br>
+            <span>CSS</span><br>
+            <span>E-mail</span><br>
+            <span>Reports</span><br>
+            <span>Django</span><br>
+            <span>Docker</span><br>
+            <span>SQL</span><br>
+            <span>Oracle</span><br>
+            <span>MSSQL</span><br>
+            <span>Selenium</span><br>
+            <span>Automação</span><br>
+            <span>Bacula</span><br>
+            <span>Front-End</span><br>
+            <span>Back-End</span><br>
+            <span>Microsoft</span><br>
+            <span>Linux</span><br>
+            <span>Backup</span><br>
         </div>
     </div>
 </body>
